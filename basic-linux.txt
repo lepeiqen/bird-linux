@@ -1,0 +1,8 @@
+sudo vi /etc/vim/vimrc  ---- tbd;
+
+linux.vbird.org/linux_basic/0580backup/backupday.sh
+http://linux.vbird.org/linux_basic/0410accountmanager/account1.sh
+
+mkdir bak-`date +%Y-%m-%d` 
+
+sudo service cron restart : /etc/init.d/* not recommend;
