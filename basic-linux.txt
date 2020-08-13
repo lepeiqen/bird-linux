@@ -1,8 +1,21 @@
+network book;
+http://linux.vbird.org/download/index.php?action=detail&fileid=69
+http://linux.vbird.org/linux_basic/0330regularex/regular_express.txt
+
 sudo vi /etc/vim/vimrc  ---- tbd;
 
 linux.vbird.org/linux_basic/0580backup/backupday.sh
 http://linux.vbird.org/linux_basic/0410accountmanager/account1.sh
 
 mkdir bak-`date +%Y-%m-%d` 
+ifconfig eth1 |grep 'inet 地址' | sed 's/^.*地址://g'
+ifconfig eth1 |grep 'inet 地址' | sed 's/^.*地址://g' | sed 's/广播.*$//g'
+cat /etc/manpath.config |grep 'MAN' | sed 's/#.*$//g'
+cat /etc/manpath.config |grep 'MAN' | sed 's/#.*$//g' | sed '/^$/d'
+sed -i 's/\.$/\!/g' regular_express.txt
+
+sed -i 's/^M$//g' regular_express.txt       : note: ^M : ctrl+v enter; not type in!!!
+in bottom line, input [ :%s/^M//g ]         : ^M : ctrl+v enter;
+                      [ :g/^M/s///g]
 
 sudo service cron restart : /etc/init.d/* not recommend;
